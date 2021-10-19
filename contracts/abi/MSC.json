@@ -1,0 +1,1037 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "name": "masterPolicy",
+    "outputs": [
+      {
+        "name": "nbPolicies",
+        "type": "uint8"
+      },
+      {
+        "name": "MaxCollateralRequired",
+        "type": "uint256"
+      },
+      {
+        "name": "collateralRequired",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "escrowAddress",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "MscOwner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "flightDetails",
+    "outputs": [
+      {
+        "name": "fltNum",
+        "type": "string"
+      },
+      {
+        "name": "depDte",
+        "type": "uint256"
+      },
+      {
+        "name": "expectedArrDte",
+        "type": "uint256"
+      },
+      {
+        "name": "actualArrDte",
+        "type": "int256"
+      },
+      {
+        "name": "fltStatus",
+        "type": "uint8"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_toRemove",
+        "type": "address"
+      }
+    ],
+    "name": "removeAuthorized",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "policyDetails",
+    "outputs": [
+      {
+        "name": "flightId",
+        "type": "bytes32"
+      },
+      {
+        "name": "dlyTime",
+        "type": "uint256"
+      },
+      {
+        "name": "premium",
+        "type": "uint256"
+      },
+      {
+        "name": "claimPayout",
+        "type": "uint256"
+      },
+      {
+        "name": "expiryDte",
+        "type": "uint256"
+      },
+      {
+        "name": "nbClients",
+        "type": "uint256"
+      },
+      {
+        "name": "nbSeatsMax",
+        "type": "uint256"
+      },
+      {
+        "name": "nbSeatsSold",
+        "type": "uint256"
+      },
+      {
+        "name": "policyStatus",
+        "type": "uint8"
+      },
+      {
+        "name": "claimPayoutBlock",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "ArrayOfPolicies",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "isOwner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "tokenAddress",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawTokens",
+    "outputs": [
+      {
+        "name": "_withdrawal",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "oracleAddress",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "authorized",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "clientsSubscriptions",
+    "outputs": [
+      {
+        "name": "datePurchased",
+        "type": "uint256"
+      },
+      {
+        "name": "premiumPaid",
+        "type": "uint256"
+      },
+      {
+        "name": "claimPaid",
+        "type": "uint256"
+      },
+      {
+        "name": "claimPayout",
+        "type": "uint256"
+      },
+      {
+        "name": "nbSeatsPurchased",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "ListOfCustomers",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_toAdd",
+        "type": "address"
+      }
+    ],
+    "name": "addAuthorized",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "ListofPoliciesSubscribed",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "PAYMT",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_escrowAddress",
+        "type": "address"
+      },
+      {
+        "name": "_orcAdr",
+        "type": "address"
+      },
+      {
+        "name": "_currencyToken",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "LogString",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "number",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogUint256",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "identifier",
+        "type": "bytes32"
+      }
+    ],
+    "name": "LogBytes32",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "LogAddress",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "client",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "premiumPaid",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "product",
+        "type": "bytes32"
+      }
+    ],
+    "name": "LogPurchasedProduct",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "nbCustomers",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "policyId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "flightId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "actualArrDte",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "name": "fltStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "PaymentDue",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "nbCustomers",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "policyId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "flightId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "actualArrDte",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "name": "fltStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "NoClaim",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_value",
+        "type": "uint8"
+      }
+    ],
+    "name": "___UDATEPAYMENT",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_fltNum",
+        "type": "string"
+      },
+      {
+        "name": "_depDte",
+        "type": "uint256"
+      },
+      {
+        "name": "_expectedArrDte",
+        "type": "uint256"
+      },
+      {
+        "name": "_dlyTime",
+        "type": "uint256"
+      },
+      {
+        "name": "_premium",
+        "type": "uint256"
+      },
+      {
+        "name": "_claimPayout",
+        "type": "uint256"
+      },
+      {
+        "name": "_expiryDte",
+        "type": "uint256"
+      },
+      {
+        "name": "_nbSeatsMax",
+        "type": "uint256"
+      }
+    ],
+    "name": "createPolicy",
+    "outputs": [
+      {
+        "name": "__policyId",
+        "type": "bytes32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_policyId",
+        "type": "bytes32"
+      },
+      {
+        "name": "_policyStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "forcePolicyStatus",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_policyId",
+        "type": "bytes32"
+      },
+      {
+        "name": "_updateDelayTime",
+        "type": "uint256"
+      },
+      {
+        "name": "_test",
+        "type": "uint256"
+      }
+    ],
+    "name": "activatePolicy",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_policyId",
+        "type": "bytes32"
+      },
+      {
+        "name": "_flightId",
+        "type": "bytes32"
+      },
+      {
+        "name": "_actualArrDte",
+        "type": "int256"
+      },
+      {
+        "name": "_fltStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "updateFromOracle",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_policyId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "processPayments",
+    "outputs": [
+      {
+        "name": "_nbClientsPaid",
+        "type": "uint256"
+      },
+      {
+        "name": "_nbSeatsPaid",
+        "type": "uint256"
+      },
+      {
+        "name": "_amountPaid",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_productId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "_getProductAvail",
+    "outputs": [
+      {
+        "name": "availability",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_productId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "_getProductPrice",
+    "outputs": [
+      {
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_client",
+        "type": "address"
+      },
+      {
+        "name": "_policyId",
+        "type": "bytes32"
+      },
+      {
+        "name": "seats",
+        "type": "uint256"
+      }
+    ],
+    "name": "clientInsuranceSubscribe",
+    "outputs": [
+      {
+        "name": "success",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_newAddress",
+        "type": "address"
+      }
+    ],
+    "name": "update_Oraclize",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_newEscrow",
+        "type": "address"
+      }
+    ],
+    "name": "updateEscrow",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_newToken",
+        "type": "address"
+      }
+    ],
+    "name": "updateToken",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_forceKill",
+        "type": "bool"
+      }
+    ],
+    "name": "_killContract",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_forceKill",
+        "type": "bool"
+      },
+      {
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "_killContract",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "_checkTokenBalances",
+    "outputs": [
+      {
+        "name": "_tokenBalance",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "_checkTokenBalances",
+    "outputs": [
+      {
+        "name": "_tokenBalance",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "_transferEscrowOwnership",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "_withdrawFromEscrow",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_fltNum",
+        "type": "string"
+      },
+      {
+        "name": "_depDte",
+        "type": "uint256"
+      },
+      {
+        "name": "_expectedArrDte",
+        "type": "uint256"
+      },
+      {
+        "name": "_dlyTime",
+        "type": "uint256"
+      },
+      {
+        "name": "_premium",
+        "type": "uint256"
+      },
+      {
+        "name": "_claimPayout",
+        "type": "uint256"
+      },
+      {
+        "name": "_expiryDte",
+        "type": "uint256"
+      },
+      {
+        "name": "_nbSeatsMax",
+        "type": "uint256"
+      }
+    ],
+    "name": "createPolicyId",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_fltNum",
+        "type": "string"
+      },
+      {
+        "name": "_depDte",
+        "type": "uint256"
+      }
+    ],
+    "name": "createFlightId",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_policyId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getNbCustomers",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
